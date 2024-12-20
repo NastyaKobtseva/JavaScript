@@ -10,11 +10,11 @@ console.log(`2) `, arrayString);
 
 // 3
 let arraySum = [1, 2, 3];
-let arraySumIndex0 = arraySum[0];
-let arraySumIndex1 = arraySum[1];
-let arraySumIndex2 = arraySum[2];
-let sum = arraySumIndex0 + arraySumIndex1 + arraySumIndex2;
-console.log(`3) ${arraySumIndex0} + ${arraySumIndex1} + ${arraySumIndex2} = ${sum}`);
+let total = 0;
+for (let i = 0; i < arraySum.length; i++) {
+    total += arraySum[i];
+}
+console.log(`3) Сума чисел = ${total}`);
 
 // 4
 let arrayOfNumbers = [1, 2, 3, 4, 5];
@@ -49,3 +49,42 @@ for (let index = 0; index < arrNum.length; index++) {
 
 
 
+// let arrayString = ['Mango', 'World', 'Shine'];
+// for (const element of arrayString) {
+//     if (element === 'World') {
+//         console.log(element);
+//         break;
+//     }
+// }
+
+// for (let i = 0; i < arrayString.length; i++) {
+//     if (arrayString[i] === 'World') {
+//         console.log(arrayString[i]);
+//         break;
+//     }    
+// }
+
+// let array = [1, 2, 3, 4, 5, 6];
+// for (let i = 0; i < array.length; i++) {
+//     if (array[i] > 4) {
+//         break;
+//     }
+//     console.log(array[i]);
+       
+// }
+
+// const matrix = [
+//     [5, 6, 8],
+//     [7, 2, 4],
+//     [2, 3, 4],
+// ]
+
+// for (let i = 0; i < matrix.length; i++) {
+//     let total = 0;
+//     for (let j = 0; j < matrix[i].length; j++) {
+//         total += matrix[i][j];
+//     }  
+//     let average = total / matrix[i].length;
+//     console.log(`Учень ${i + 1} має середній бал: ${average}`);
+
+// }
